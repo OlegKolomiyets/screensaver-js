@@ -13,26 +13,3 @@ const imagesArr = [
   "https://images.pexels.com/photos/885880/pexels-photo-885880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=1260",
   "https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
 ];
-let container = document.querySelector(".screensaver");
-
-function showRandomPic() {
-  let random = Math.floor(Math.random() * (imagesArr.length - 0 + 1)) + 0;
-  return imagesArr[random];
-}
-
-let img = document.createElement("span");
-// photo.classList.add("photo");
-
-setInterval(() => {
-  //img.style.left = Math.floor(Math.random() * (max - min + 1)) + min; // сделать нормально
-
-  //window.innerWidth
-  //window.innerHeight;
-  img.innerHTML = `<img src=${showRandomPic()}>`;
-  img.style.left =
-    Math.floor(Math.random() * (window.innerWidth - 0 + 1)) + 0 + "px";
-  img.style.top =
-    Math.floor(Math.random() * (window.innerHeight - 0 + 1)) + 0 + "px";
-}, 5000);
-// console.log(setInterval);
-container.appendChild(img);
