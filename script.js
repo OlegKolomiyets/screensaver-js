@@ -33,6 +33,7 @@ setInterval(() => {
     Math.floor(Math.random() * (window.innerWidth - 0 + 1)) + 0 + "px";
   img.style.top =
     Math.floor(Math.random() * (window.innerHeight - 0 + 1)) + 0 + "px";
-}, 5000);
+}, changeTime);
+
 // console.log(setInterval);
 container.appendChild(img);
