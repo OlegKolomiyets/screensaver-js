@@ -24,3 +24,6 @@ h3 {
   font-weight: 600;
   line-height: 1.25;
 }
+span {
+  position: absolute;
+}
