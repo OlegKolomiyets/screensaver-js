@@ -28,17 +28,24 @@ span {
   position: absolute;
 }
 
-.fadeMe {
-  animation: fadeIn 1.5s linear;
+.fade {
+  /* animation: fade 4s linear; */
+  animation: fade var(--fadetime) linear;
 }
-@keyframes fadeIn {
+@keyframes fade {
   0% {
     opacity: 0;
   }
-  100% {
+  25% {
+    opacity: 0.5;
+  }
+  50% {
     opacity: 1;
   }
-}
-.fadeMe.none {
-  display: none;
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
